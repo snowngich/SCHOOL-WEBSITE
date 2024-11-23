@@ -1,0 +1,348 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f4f8;
+}
+
+/* Utility Classes */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #003c8f, #005bcb);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header__nav .nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav .nav__item {
+    margin: 0 15px;
+}
+
+.header__nav .nav__link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header__nav .nav__link:hover {
+    background-color: white;
+    color: #003c8f;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(90deg, #003c8f, #005bcb), url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero__title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero__description {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero__cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: #003c8f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero__cta-button:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Section Titles */
+.section__title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #003c8f;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* About Section */
+.about {
+    background: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 5px solid #005bcb;
+    border-bottom: 5px solid #005bcb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about__description, .about__mission {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Admissions Section */
+.admissions {
+    background: linear-gradient(135deg, #005bcb, #003c8f);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.admissions__cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: #003c8f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.admissions__cta-button:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Academics Section */
+.academics {
+    background: #f7f9fc;  /* Light background color */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.academics__container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    flex-wrap: wrap;  /* Items will wrap if the screen is too narrow */
+    gap: 30px; /* Adds space between tiles */
+    margin-top: 20px;
+}
+
+.academics__item {
+    background: #e3effd;  /* Light blue background */
+    color: #003c8f;  /* Text color */
+    flex: 1;  /* Equal width for all items */
+    max-width: 300px;  /* Maximum width to avoid oversized items */
+    height: 180px;  /* Set fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;  /* Larger text */
+    font-weight: 600;  /* Bold text */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+    padding: 20px;  /* Padding for inner content */
+    cursor: pointer;
+}
+
+.academics__item:hover {
+    transform: translateY(-8px);  /* Lift the box on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);  /* Increased shadow on hover */
+    background: linear-gradient(135deg, #005bcb, #003c8f);  /* Gradient background on hover */
+    color: white;  /* White text on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.academics__item:active {
+    transform: translateY(0);  /* Returns to normal position on click */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.academics__item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;  /* Spacing between the title and the description */
+}
+
+.academics__item p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: 0.8;  /* Slight transparency for the description */
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .academics__container {
+        flex-direction: column;  /* Stack items vertically on tablets and smaller screens */
+        align-items: center;
+    }
+
+    .academics__item {
+        width: 90%;  /* Make each item take more width on smaller screens */
+        max-width: 400px;  /* Max width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .academics__item {
+        max-width: 90%;  /* Make items even wider on mobile screens */
+        height: auto;  /* Allow items to adjust height based on content */
+    }
+}
+
+/* Events Section */
+.events {
+    background: linear-gradient(135deg, #ffffff, #e9f3ff);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.events__list {
+    list-style: none;
+    text-align: center;
+}
+
+.events__item {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Contact Section */
+.contact {
+    background: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact__form {
+    max-width: 600px;
+    margin: 20px auto 0;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form__label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #003c8f;
+}
+
+.form__input, .form__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form__submit {
+    padding: 12px 25px;
+    background-color: #003c8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.form__submit:hover {
+    background-color: #005bcb;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #003c8f, #005bcb);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer__text {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__nav .nav__list {
+        flex-direction: column;
+    }
+
+    .header__nav .nav__item {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+    }
+}

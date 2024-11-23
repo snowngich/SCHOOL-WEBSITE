@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header__container">
+            <h1 class="header__title">Welcome to ACHIEVERS COLLEGE</h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="#admissions" class="nav__link">Admissions</a></li>
+                    <li class="nav__item"><a href="#academics" class="nav__link">Academics</a></li>
+                    <li class="nav__item"><a href="#events" class="nav__link">Events</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero__container">
+            <h2 class="hero__title">Shaping Bright Futures</h2>
+            <p class="hero__description">Your journey to excellence begins here!</p>
+            <a href="#admissions" class="hero__cta-button">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container about__container">
+            <h2 class="section__title">About Us</h2>
+            <p class="about__description">
+                Welcome to [School Name], a place where we nurture young minds to achieve their full potential.
+            </p>
+            <p class="about__mission">
+                Our mission is to provide quality education and foster creativity, leadership, and character development.
+            </p>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions">
+        <div class="container admissions__container">
+            <h2 class="section__title">Admissions</h2>
+            <p class="admissions__description">
+                Join our community of learners! Apply today and be part of an exceptional journey.
+            </p>
+            <a href="admission-form.html" class="cta-button admissions__cta-button">Start Application</a>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="academics">
+        <div class="container academics__container">
+            <h2 class="section__title">Academics</h2>
+            <p class="academics__description">
+                Discover our innovative curriculum designed to inspire and challenge every student.
+            </p>
+            <ul class="academics__list">
+                <li class="academics__item">COMPUTER SCIENCE</li>
+                <li class="academics__item">INFORMATION TECHNOLOGY</li>
+                <li class="academics__item">SOFTWARE ENGINEERING</li>
+                <li class="academics__item">CYBER SECURITY</li>
+                <li class="academics__item">Extracurricular Activities</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container events__container">
+            <h2 class="section__title">Upcoming Events</h2>
+            <ul class="events__list">
+                <li class="events__item">HACKATHON - Dec 15, 2024</li>
+                <li class="events__item">EXHIBITION - Jan 20, 2025</li>
+                <li class="events__item">GRADUATION DAY - Feb 10, 2025</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact__container">
+            <h2 class="section__title">Contact Us</h2>
+            <p class="contact__address">Address: 123 Learning Lane, SNOW City</p>
+            <p class="contact__email">Email: snowngich35@gmail.com</p>
+            <p class="contact__phone">Phone: +254722446473</p>
+            <form action="submit-form.php" method="POST" class="contact__form">
+                <label for="name" class="form__label">Name:</label>
+                <input type="text" id="name" name="name" class="form__input" required>
+                
+                <label for="email" class="form__label">Email:</label>
+                <input type="email" id="email" name="email" class="form__input" required>
+                
+                <label for="message" class="form__label">Message:</label>
+                <textarea id="message" name="message" class="form__textarea" required></textarea>
+                
+                <button type="submit" class="form__submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">&copy; 2024 ACHIEVERS COLLEGE. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
